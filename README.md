@@ -1,3 +1,14 @@
+0. 解压datasets/pix2code_datasets.zip
+1. 执行pix2code_install_manager.sh
+2. 训练仅html,train.sh
+3. 生成
+# generate DSL code (.gui file), the default search method is greedy
+# usage: sample.py <trained weights path> <trained model name> <input image> <output path> <search method (default: greedy)>
+./sample.py ../bin pix2code ../test_gui.png ../code
+# compile .gui file to HTML/CSS (Bootstrap style)
+./web-compiler.py <input file path>.gui
+
+
 # pix2code
 *Generating Code from a Graphical User Interface Screenshot*
 
